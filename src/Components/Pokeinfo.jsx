@@ -16,13 +16,15 @@ const Pokeinfo = ({ pokemon }) => {
     return (
         <>
             <h1>{pokemon.name}</h1>
-            <img
-                src={
-                    pokemon.sprites.versions["generation-v"]["black-white"]
-                        .animated.front_default
-                }
-                alt="here"
-            ></img>
+            <div className="img-container">
+                <img
+                    src={
+                        pokemon.sprites.versions["generation-v"]["black-white"]
+                            .animated.front_default
+                    }
+                    alt="here"
+                ></img>
+            </div>
             {pokemon.types.map((type) => (
                 <h2 key={type.slot}>{type.type.name}</h2>
             ))}
