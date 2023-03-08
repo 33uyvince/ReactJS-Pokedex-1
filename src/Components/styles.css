@@ -4,36 +4,64 @@
 }
 
 body {
-    background-color: #fceec8;
+    background-color: #a41623;
 }
 .container {
-    width: 90%;
-    margin: auto;
-    padding-top: 100px;
     display: flex;
+    justify-content: center;
+    margin-top: 80px;
 }
-
-.left-content,
-.right-content {
-    flex-basis: 50%;
+.left-container {
+    padding: 32px;
+    background-color: rgb(245, 245, 245);
+    border: 7px solid rgb(192, 192, 192);
+    border-radius: 24px;
 }
-
 .left-content {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 2rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 30px;
+    margin-right: 49px;
+    margin-left: 49px;
+    column-gap: 20px;
+    row-gap: 40px;
+    justify-content: center;
 }
+.right-container {
+    background-color: rgb(245, 245, 245);
+    border: 7px solid rgb(192, 192, 192);
+    border-radius: 24px;
+    margin: 6rem 2rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 36px;
+}
+.right-content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+.prev-next-btn {
+    display: flex;
 
+    gap: 12px;
+}
+.nav-btn {
+    flex: 50%;
+}
 .card {
-    width: 300px;
     background-color: #9edef9;
     border-radius: 1rem;
     box-shadow: 0 5px 5px rgb(0, 0, 0);
-    padding: 0 1.5rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    padding: 12px;
     box-sizing: border-box;
+    width: 200px;
+    cursor: pointer;
+    text-align: center;
 }
 
 .pokeinfo {

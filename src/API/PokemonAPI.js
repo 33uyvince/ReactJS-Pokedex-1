@@ -9,7 +9,7 @@ export const getPokemon = (pokemonName) => {
 
 export const getPokemonList = (offset) => {
     return axios
-        .get(`https://pokeapi.co/api/v2/pokemon?limit=10&offset=${offset}`)
+        .get(`https://pokeapi.co/api/v2/pokemon?limit=9&offset=${offset}`)
         .then((response) => response.data)
         .catch((error) => console.log(error));
 };

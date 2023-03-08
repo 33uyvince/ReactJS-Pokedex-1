@@ -1,5 +1,17 @@
 import React from "react";
 
+// const Pokeinfo = ({ name, image, types }) => {
+//     return (
+//         <>
+//             <h1>{name}</h1>
+//             <img src={image} alt="here"></img>
+//             {types.map((type) => (
+//                 <h2 key={type.slot}>{type.type.name}</h2>
+//             ))}
+//         </>
+//     );
+// };
+
 const Pokeinfo = ({ pokemon }) => {
     return (
         <>
